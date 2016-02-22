@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  . {
+      margin: auto;
+  }
+
+
+  </style>
+  <script type="text/javascript">
+    function showImage4() {
+     $( "#myCarousel" ).find(".active").removeClass( "active" );
+     $('#4').addClass('active');
+      
+      // body...
+    }
+    function showImage2(){
+      $( "#myCarousel" ).find(".active").removeClass( "active" );
+      $('#2').addClass('active');
+    }
+    function showImage3(){
+      $( "#myCarousel" ).find(".active").removeClass( "active" );
+      $('#3').addClass('active');
+    }
+    function showImage1(){
+      $( "#myCarousel" ).find(".active").removeClass( "active" );
+      $('#1').addClass('active');
+    }
+  </script>
+</head>
+<body>
+
+<div  >
+  <br>
+  <div id="myCarousel" style="float: left; width:75%" class="carousel slide" data-ride="carousel">
+    
+      <div class="carousel-inner" role="listbox">
+      <div class="item" id="1">
+        <img src="1.jpg" alt="uiAssignment" width="1500" height="3345">
+      </div>
+
+      <div class="item" id="2">
+        <img src="2.jpg" alt="uiAssignment" width="1500" height="3345">
+      </div>
+    
+      <div class="item active"  id="3">
+        <img src="3.jpg" alt="uiAssignment" width="1500" height="3345">
+      </div>
+
+      <div class="item" id="4">
+        <img src="4.jpg" alt="uiAssignment" width="1500" height="3345">
+      </div>
+    </div>
+  </div>
+<div style="float: right; width: 24%;">
+ 
+            <h1 style="float: right;">Lens &nbsp</h1>
+            <br><br><br><br>
+            <p style="float: right;">Just another fine responsive site template by HTML5 UP.  </p>
+             <br><br>
+           <p style="float: right;">
+           <span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp
+           <span class="glyphicon glyphicon-thumbs-up"></span>&nbsp&nbsp
+           <span class="glyphicon glyphicon-thumbs-down"></span>&nbsp&nbsp
+           <span class="glyphicon glyphicon-eye-open"></span>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+           </p> 
+           <br><br><br><br>
+          
+
+
+          <section id="thumbnails">
+            
+              <img src="1.jpg" alt="" width="150" height="150" onclick="showImage1()"/>
+            
+            
+             <img src="2.jpg" alt="" width="150" height="150" onclick="showImage2()" />
+            
+            
+              <img src="3.jpg" alt="" width="150" height="150" onclick="showImage3()"/>
+            
+            
+              <img src="4.jpg" alt="" width="150" height="150" onclick="showImage4()"/>
+            
+            
+          </section>
+
+     </div>
+
+</div>
+
+</body>
+</html>
